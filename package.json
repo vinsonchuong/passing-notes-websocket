@@ -1,0 +1,38 @@
+{
+  "name": "passing-notes-websocket",
+  "version": "0.0.0",
+  "description": "An awesome package",
+  "keywords": [],
+  "homepage": "https://github.com/vinsonchuong/passing-notes-websocket",
+  "bugs": "https://github.com/vinsonchuong/passing-notes-websocket/issues",
+  "license": "MIT",
+  "author": "Vinson Chuong <vinsonchuong@gmail.com>",
+  "repository": "vinsonchuong/passing-notes-websocket",
+  "scripts": {
+    "test": "xo && ava",
+    "release": "semantic-release"
+  },
+  "type": "module",
+  "ava": {
+    "verbose": true
+  },
+  "xo": {
+    "prettier": true,
+    "space": 2,
+    "semicolon": false,
+    "rules": {
+      "import/no-anonymous-default-export": "off"
+    }
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "packageManager": "yarn@3.5.0",
+  "devDependencies": {
+    "ava": "^5.2.0",
+    "semantic-release": "^21.0.1",
+    "xo": "^0.54.0"
+  }
+}
