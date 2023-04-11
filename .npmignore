@@ -1,6 +1,9 @@
-yarn.lock
 .gitignore
 .github/
+
+.yarn/
+.yarnrc.yml
+yarn.lock
 
 **/*.test.js
 **/test.js
