@@ -7,7 +7,7 @@ const keyRegex = /^[+/\dA-Za-z]{22}==$/
 export default function (acceptWebSocket) {
   return (next) => (request) => {
     if (
-      request.headers.connection === 'Upgrade' &&
+      parseConnectionHeader(request.headers).includes('Upgrade') &&
       request.headers.upgrade === 'websocket'
     ) {
       if (request.method !== 'GET') {
@@ -55,4 +55,14 @@ export default function (acceptWebSocket) {
 
     return next(request)
   }
+}
+
+function parseConnectionHeader(headers) {
+  const header = headers.connection
+
+  if (!header) {
+    return []
+  }
+
+  return header.split(',').map((value) => value.trim())
 }
