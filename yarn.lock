@@ -6097,6 +6097,7 @@ __metadata:
   resolution: "passing-notes-websocket@workspace:."
   dependencies:
     ava: ^5.2.0
+    make-cert: ^1.2.1
     passing-notes: ^6.6.1
     semantic-release: ^21.0.1
     ws: ^8.13.0
