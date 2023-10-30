@@ -3396,10 +3396,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"get-port@npm:^6.1.2":
-  version: 6.1.2
-  resolution: "get-port@npm:6.1.2"
-  checksum: e3c3d591492a11393455ef220f24c812a28f7da56ec3e4a2512d931a1f196d42850b50ac6138349a44622eda6dc3c0ccd8495cd91376d968e2d9e6f6f849e0a9
+"get-port@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "get-port@npm:7.0.0"
+  checksum: e9087f62d086bbb70f20c0a208e7cac552679c1426e29e0607eb1b8907a5cc4509337d5971b7f635385cd2a773a14cd21b7d9c3254a2eb5ebeaf5f8fde19fb07
   languageName: node
   linkType: hard
 
@@ -6102,6 +6102,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"p-event@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "p-event@npm:6.0.0"
+  dependencies:
+    p-timeout: ^6.1.2
+  checksum: def3e49cd896fbf51264524959adf3f4542402541fda9c9681702308683df23bf0e75f7512db9509eeafe0bfef5d13b4eea0b6e13c6437766470caef01548654
+  languageName: node
+  linkType: hard
+
 "p-filter@npm:^3.0.0":
   version: 3.0.0
   resolution: "p-filter@npm:3.0.0"
@@ -6219,6 +6228,13 @@ __metadata:
   version: 5.1.0
   resolution: "p-timeout@npm:5.1.0"
   checksum: f5cd4e17301ff1ff1d8dbf2817df0ad88c6bba99349fc24d8d181827176ad4f8aca649190b8a5b1a428dfd6ddc091af4606835d3e0cb0656e04045da5c9e270c
+  languageName: node
+  linkType: hard
+
+"p-timeout@npm:^6.1.2":
+  version: 6.1.2
+  resolution: "p-timeout@npm:6.1.2"
+  checksum: 887b805eb72c217dbc3c55a60a7f3b89a46cab14f04af62224f253ec84716cbd0880758be13b35444a4fa12d64d37d4c8a300f0b12a57c004d289f0a574cfe91
   languageName: node
   linkType: hard
 
@@ -6340,10 +6356,10 @@ __metadata:
   linkType: soft
 
 "passing-notes@npm:^6.6.1":
-  version: 6.6.1
-  resolution: "passing-notes@npm:6.6.1"
+  version: 6.7.0
+  resolution: "passing-notes@npm:6.7.0"
   dependencies:
-    get-port: ^6.1.2
+    get-port: ^7.0.0
     get-stream: ^6.0.1
     heliograph: ^7.0.0
     hot-esm: ^1.6.0
@@ -6351,13 +6367,13 @@ __metadata:
     indent-string: ^5.0.0
     lodash: ^4.17.21
     make-cert: ^1.2.1
-    p-event: ^5.0.1
+    p-event: ^6.0.0
     pretty-ms: ^8.0.0
     puff-pastry: ^1.3.2
     type-is: ^1.6.18
   bin:
     pass-notes: bin.js
-  checksum: aad40a08eda7772aceb21fa793ce816e3b61f69a38521a23331909b1a0ea2dd43d1bbb26d270f3818107e602b78ab1f8520bf4948417b2abb067f19cab2f12bd
+  checksum: a3bd517c51b59645dc20f2647aab26e07ea6816821408fc51cb2240e2d24d0d3c0f984330b5286aef4f2d1114fa5952fe0e2d06d59b50f14fecc9a1d275f9346
   languageName: node
   linkType: hard
 
