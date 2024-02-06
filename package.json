@@ -36,7 +36,7 @@
     "make-cert": "^1.2.1",
     "passing-notes": "^6.6.1",
     "semantic-release": "^23.0.0",
-    "xo": "^0.56.0"
+    "xo": "^0.57.0"
   },
   "dependencies": {
     "ws": "^8.13.0"
