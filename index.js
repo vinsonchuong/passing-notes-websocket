@@ -4,7 +4,7 @@ import WebSocket from 'ws'
 const webSocketHashingConstant = '258EAFA5-E914-47DA-95CA-C5AB0DC85B11'
 const keyRegex = /^[+/\dA-Za-z]{22}==$/
 
-export default function (acceptWebSocket) {
+export default function serveWebSocket(acceptWebSocket) {
   return (next) => (request) => {
     if (
       parseConnectionHeader(request.headers).includes('Upgrade') &&
@@ -43,7 +43,7 @@ export default function (acceptWebSocket) {
             .digest('base64'),
         },
         upgrade(socket, head) {
-          const ws = new WebSocket(null)
+          const ws = new WebSocket(null, [], {})
           ws.setSocket(socket, head, {
             maxPayload: 100 * 1024 * 1024,
             skipUTF8Validation: false,

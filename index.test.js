@@ -24,6 +24,10 @@ test('accepting WebSocket requests', async (t) => {
   })
 
   const ws = new WebSocket('ws://localhost:10000')
+  t.teardown(() => {
+    ws.close()
+  })
+
   await new Promise((resolve) => {
     ws.once('open', resolve)
   })
@@ -58,6 +62,10 @@ test('accepting WebSocket requests over TLS', async (t) => {
   })
 
   const ws = new WebSocket('wss://localhost:10001', {rejectUnauthorized: false})
+  t.teardown(() => {
+    ws.close()
+  })
+
   await new Promise((resolve) => {
     ws.once('open', resolve)
   })
