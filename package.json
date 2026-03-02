@@ -32,7 +32,7 @@
   },
   "packageManager": "yarn@4.7.0",
   "devDependencies": {
-    "ava": "^6.2.0",
+    "ava": "^7.0.0",
     "make-cert": "^1.2.1",
     "passing-notes": "^6.8.6",
     "semantic-release": "^25.0.0",
