@@ -35,7 +35,7 @@
     "ava": "^8.0.0",
     "make-cert": "^1.2.1",
     "passing-notes": "^6.8.6",
-    "semantic-release": "^25.0.0",
+    "semantic-release": "^26.0.1",
     "xo": "^0.60.0"
   },
   "dependencies": {
